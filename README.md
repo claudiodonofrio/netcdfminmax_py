@@ -20,7 +20,9 @@ optional arguments:
 
 #### Example output:
 
+``` python
 python cdfminmax.py -v -d "./netcdf_testfiles"
+```
 rootdir = ./netcdf_testfiles
 ./netcdf_testfiles\edgar.nc
 timed in (s): 9.2700533
