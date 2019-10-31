@@ -1,7 +1,7 @@
 ## netcdfminmax
 
 A python script to read a netcdf file and extract minimum and maximum values for all variables. The script contains a "class" which can be instantiated or the script can be executed directly.
-""" pythyon
+``` pythyon
 python cdfminmax.py -h
 usage: cdfminmax.py [-h] [-v] [-d DIRECTORY]
 
@@ -10,7 +10,7 @@ optional arguments:
   -v, --verbose         show process progess
   -d DIRECTORY, --directory DIRECTORY
                         set root directory to traverse
-"""
+```
 
 - If -d DIRECTORY is not provided or invalid, the current directory is used as "root directory"
 - all files and folders within the "root directory" are considered
