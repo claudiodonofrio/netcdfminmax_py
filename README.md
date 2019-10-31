@@ -13,9 +13,11 @@ optional arguments:
 ```
 
 - If -d DIRECTORY is not provided or invalid, the current directory is used as "root directory"
-- all files and folders within the "root directory" are considered
+- all files and folders within the "root directory" are considered, checked for valid files
+- valid files are if the first 8 bytes of the file contains the header [cdf|hdf], the filename is not important. Be aware that the file format definition for HDF specifies, that header information may be written to bytes 512, 1024, 2048. etc. The current script does NOT check this. Hence if the header signature is not in the first 8 bytes, the file is not recognised.
 - for a valid netcdf file an output file is written with filename.json
 - already existing outputfiles are overwritten
+- '_FillValue' and missing_value': Each variable within the file has a _FillValue, which is used to return a masked array. Hence the calculation of min/max should be correct. If for whatever reason the _FillValue is different to the actually fill value in the data set, it is possible that the minimum returned is wrong.
 
 
 #### Example output:
