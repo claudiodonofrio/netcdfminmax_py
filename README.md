@@ -23,7 +23,7 @@ optional arguments:
 ``` python
 python cdfminmax.py -v -d "./netcdf_testfiles"
 ```
-rootdir = ./netcdf_testfiles
+rootdir = ./netcdf_testfiles<br>
 ./netcdf_testfiles\edgar.nc
 timed in (s): 9.2700533
 overwrite ./netcdf_testfiles\edgar.nc.json ...OK
